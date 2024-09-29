@@ -11,3 +11,11 @@ spring:
     username: ticket_app_user
     password: pwd
     driver-class-name: org.postgresql.Driver
+  
+  data:
+    mongodb:
+      host: localhost
+      port: 27018
+      database: ticket_booking_db
+      username: ticket_user
+      password: pwd

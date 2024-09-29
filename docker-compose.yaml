@@ -9,3 +9,14 @@ services:
       POSTGRES_PASSWORD: pwd
     volumes:
       - ./database:/docker-entrypoint-initdb.d/
+
+  mongo:
+    image: mongo:8.0
+    ports:
+      - "27018:27017"
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: root_password
+      MONGO_INITDB_DATABASE: ticket_booking_db
+    volumes:
+      - ./mongo:/docker-entrypoint-initdb.d
