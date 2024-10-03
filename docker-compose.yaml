@@ -1,10 +1,11 @@
 services:
   postgres:
     image: postgres:13-alpine
+    container_name: postgres-booking
     ports:
       - "5432:5432"
     environment:
-      POSTGRES_DB: ticket_booking
+      POSTGRES_DB: ticket_booking_db
       POSTGRES_USER: ticket_app_user
       POSTGRES_PASSWORD: pwd
     volumes:
@@ -12,6 +13,7 @@ services:
 
   mongo:
     image: mongo:8.0
+    container_name: mongo-booking
     ports:
       - "27018:27017"
     environment:

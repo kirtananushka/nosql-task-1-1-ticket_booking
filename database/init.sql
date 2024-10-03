@@ -193,9 +193,9 @@ VALUES (1, 1, 5, 'VIP'),
        (45, 15, 13, 'VIP'),
        (6, 16, 16, 'STANDARD'),
        (17, 17, 8, 'STANDARD'),
-       (28, 18, 22, 'VIP'),
-       (39, 19, 24, 'STANDARD'),
-       (50, 20, 23, 'VIP');
+       (28, 5, 22, 'VIP'),
+       (39, 5, 24, 'STANDARD'),
+       (50, 5, 23, 'VIP');
 
 
 INSERT INTO user_accounts (user_id, balance)
